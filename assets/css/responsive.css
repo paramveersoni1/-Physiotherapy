@@ -1,0 +1,28 @@
+@media only screen and (max-width: 991px){
+   /* uper-header*/
+   .uper_title{
+       display: none;
+   }
+   .banner_content{
+    top: 116px;
+    left: 100px;
+   }
+}
+@media only screen and (max-width: 767px){
+    .services_title p{
+        margin: auto 0;
+    }
+    /* about */
+    .about_inner{
+        display: block;
+    }
+    .banner_inner img{
+        height: 300px;
+    }
+}
+@media only screen and (max-width: 480px){
+    .banner_content{
+        top: 100px;
+        left: 70px;
+       }
+}
