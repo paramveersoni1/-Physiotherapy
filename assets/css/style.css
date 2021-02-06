@@ -2,6 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding:0;
+    /* font-family: initial; */
+    font-family: system-ui;
 }
 a{
     text-decoration: none;
@@ -12,7 +14,7 @@ ul{
 /* uper-header */
 .uper_title{
     padding: 15px 15px;
-    background-color: #066271;
+    background-color: #01001f;
     overflow: hidden;
 }
 .uper_info{
@@ -40,9 +42,6 @@ ul{
     border-radius: 50%;
 }
 /* main-header */
-div#navbarNav{
-    justify-content: flex-end;
-}
 .navbar-light .navbar-brand {
     color: orangered;
     font-size: 26px;
@@ -55,7 +54,11 @@ div#navbarNav{
 .navbar-light .navbar-nav .nav-link{
     font-size: 20px;
     color: #000;
+    margin: auto 15px;
     text-transform: capitalize;
+}
+.navbar-expand-lg .navbar-nav{
+    margin-left: 100px;
 }
 .navbar-light .navbar-nav .nav-link:hover{
     color: orangered;
@@ -64,7 +67,7 @@ div#navbarNav{
 .banner_content{
     font-size: 50px;
     text-transform: uppercase;
-    color: orangered;
+    color: #ffa500;
     position: absolute;
     top: 200px;
     left: 200px;
@@ -84,9 +87,12 @@ div#navbarNav{
     border-radius: 50%;
     height: 15px;
 }
+.banner_section{
+    overflow: hidden;
+}
 /* time-table */
 .upper_title i{
-    background-color: #066271;
+    background-color: #01001f;
     width: 70px;
     height: 44px;
     text-align: center;
@@ -97,6 +103,8 @@ div#navbarNav{
 .upper_title{
     position: relative;
     top: 8px;
+    margin-bottom: -3px;
+    margin-left: 3px;
 }
 .doctor_timetable p {
    color: #ffff;
@@ -125,18 +133,19 @@ a.btn_main,.appointment_info button:hover{
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid;
-    margin: 43px 0;
+    margin: 39px 0;
     text-transform: capitalize;
 }
 .appointment_info{
-    background-color: #066272;
-    padding: 30px;
+    background-color: #01001f;
+    padding: 16px;
     color: #fff;
+    position: relative;
+    right: 15px;
 }
 .appointment_info input{
     width: 100%;
-    margin: 10px 15px;
-    padding: 10px;
+    padding: 12px 20px;
     outline: none;
 }
 .section{
@@ -160,6 +169,14 @@ a.btn_main,.appointment_info button:hover{
 }
 .services_inner:hover{
     color: orangered;
+}
+input[type="password"] {
+    width: 100%;
+    padding: 17px;
+}
+/* section-img */
+.section_img{
+    height: 500px;
 }
 /* Choose Us */
 .choose_title h4{
@@ -187,10 +204,6 @@ a.btn_main,.appointment_info button:hover{
     background-color: black;
 }
 .choose-bg{
-    background: rgba(9, 240, 21, 1.0);
-    background: -webkit-linear-gradient(bottom left, rgba(9, 240, 21, 1.0), rgba(15, 8, 245, 1.0));
-    background: -moz-linear-gradient(bottom left, rgba(9, 240, 21, 1.0), rgba(15, 8, 245, 1.0));
-    background: linear-gradient(to top right, rgba(9, 240, 21, 1.0), rgba(15, 8, 245, 1.0));
     color:#000;
     padding:20px 0;
 }
@@ -204,7 +217,7 @@ a.btn_main,.appointment_info button:hover{
 .choose-inner span{
    font-size: 55px;
    margin-right: 12px;
-   color: orangered;
+   color: #01001f;
 }
 .choose-inner:hover .choose-inner img{
     transform: rotate(360dg);
@@ -226,9 +239,27 @@ a.btn_main,.appointment_info button:hover{
     font-size: 14px;
 }
 /* team-section */
+.team_info{
+     display: flex;
+    color: #898989;
+    flex-wrap: wrap;
+}
+.team_info li{
+    width: 126px;
+    height: 200px;
+    list-style-type: none;
+    border: 1px solid silver;
+    border-radius: 4px;
+    text-align: center;
+    margin: 7px;
+    position: relative;
+    right: -12px;
+    float: left;
+    font-size: 12px;
+    line-height: 20px;
+}
 .team_info img{
-    height: 300px;
-    width: 255px;
+    margin-bottom: 8px;
 }
 /* social */
 .social_info img{
@@ -254,19 +285,20 @@ a.btn_main,.appointment_info button:hover{
     border-radius: 0px;
 }
 .btn_social:hover{
-    background-color: #066271;
+    background-color: #01001f;
     color: #fff;
     text-decoration: none;
 }
 .social_info h4{
     margin: 12px 0;
+    font-size: 22px;
 }
 .social_sevice_title {
     padding: 20px 0;
 }
 /* footer */
 .footer {
-    background-color: #262928;
+    background-color: #01001f;
     color: #fff;
     padding: 50px 0;
     margin: 20px 0 0 0;
@@ -275,9 +307,10 @@ a.btn_main,.appointment_info button:hover{
     border-bottom: 1px solid;
     padding-bottom: 20px;
     position: relative;
+    font-size: 22px;
 }
 .banner_inner img{
-    height: 425px;
+    height: 491px;
 }
 .footer-info h3::after{
     content: "";
@@ -335,3 +368,106 @@ i.fa.fa-instagram {
     height: 218px;
     margin-bottom: 15px;
 }
+/* contact */
+.contact_form input{
+     width: 100%;
+     margin: 10px 0;
+     outline: none;
+     padding: 10px;
+}
+.contact-btn{
+    width: 20%;
+    margin-top: 24px;
+}
+/* blog.html */
+.card-header{
+    background-color: #01001f;
+}
+.btn-link {
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+}
+.btn-link:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.blog_title h3 {
+    border-bottom: 1px solid #6d6d6d ;
+    padding-bottom: 12px;
+    font-weight:400;
+    position: relative;
+}
+.blog_title h3::before{
+    content: "";
+    position: absolute;
+    height: 5px;
+    background-color: #e02f2f;
+    left: 0;
+    bottom: -1px;
+    width: 50px;
+}
+.blog_title a{
+    padding: 5px 0;
+    display: inline-block;
+    width: 100%;
+    color: #2f2f2f;
+    position: relative;
+}
+.blog_title a::after{
+       content:">";
+       position: absolute;
+       top: 3px;
+       right: 0;
+}
+.blog_title a:hover{
+    color: #97ceeb;
+    text-decoration: none;
+}
+.blog_title p{
+    color: #89929c;
+}
+.blog-right h3{
+   font-weight: 600;
+}
+.blog-right p{
+    color: #89929c;
+}
+.blog-inner{
+    padding: 25px 30px;
+    background: #ebedec;
+    border-radius: 30px;
+}
+.doctor_timetable p {
+    color: #ffff;
+    margin-bottom: 12px;
+}
+/* login.html */
+button {   
+    background-color: orangered;   
+    width: 20%;  
+     color: #fff;   
+     padding: 15px;   
+     margin: 10px 0px;   
+     border: none;   
+     cursor: pointer;   
+      }  
+input[type=text], input[type=email] {   
+     width: 100%;   
+     margin: 8px 0;  
+     padding: 12px 20px;   
+     display: inline-block;   
+     box-sizing: border-box;   
+ }     
+.cancelbtn {   
+     width: auto;   
+     padding: 10px 18px;  
+     margin: 10px 5px;  
+ }   
+  
+.login_info {   
+    padding: 25px;
+    background-color: #01001f;
+    color: #ffff;
+    margin-top: 50px;
+ }   

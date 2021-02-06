@@ -7,6 +7,27 @@
     top: 116px;
     left: 100px;
    }
+   .navbar-expand-lg .navbar-nav {
+    margin-left: 0px;
+   }
+   /* team */
+   .team_info li{
+    width: 157px;
+    height: 230px;
+    right: -9px;
+   }
+   /* banner */
+   .appointment_info{
+       right: 0;
+   }
+   /* header */
+   .navbar-light .navbar-toggler{
+       width: 60px;
+       margin-left: 82%;
+   }
+   nav.navbar.navbar-expand-lg.navbar-light.bg-light.d-lg-block.d-md-none {
+    display: none;
+   }
 }
 @media only screen and (max-width: 767px){
     .services_title p{
@@ -19,10 +40,29 @@
     .banner_inner img{
         height: 300px;
     }
+    /* header */
+    .navbar-light .navbar-toggler{
+        width: 60px;
+        margin-left: 0%;
+    }
 }
+@media only screen and (max-width: 567px){
+    .team_info li {
+        width: 93%;
+        height: auto;
+    }
+    .section_img{
+        height: 400px;
+    }
+}
+
 @media only screen and (max-width: 480px){
     .banner_content{
         top: 100px;
         left: 70px;
        }
+       .team_info li {
+        width: 90%;
+        height: 100%;
+    }
 }
