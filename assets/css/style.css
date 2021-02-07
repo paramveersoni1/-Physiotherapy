@@ -471,3 +471,6 @@ input[type=text], input[type=email] {
     color: #ffff;
     margin-top: 50px;
  }   
+ button.btn.btn-link {
+    width: 100%;
+}
